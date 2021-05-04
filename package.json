@@ -1,7 +1,7 @@
 {
   "name": "twitch-chat-bot",
   "version": "1.0.0",
-  "description": "twitch bot built w/nodejs ",
+  "description": "twitch bot built w/nodejs, tmi.js",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
