@@ -44,11 +44,26 @@ client.connect();
 
 client.on('message', (channel, tags, message, self) => {
 	if(self || !message.startsWith('!')) return;
+  let quotes = [
+    '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief"',
+    '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
+    '“And you told me you were gonna wear something nice.” -Sgt. Major Avery Johnson',
+    '“Asking’s Not My Strong Suit.” -Master Chief',
+    '“Thought I’d Try Shooting My Way Out—Mix Things Up A Little.” -Master Chief',
+    '“Usually the good Lord works in mysterious ways. But not today! This here is sixty-six tons of straight-up, H-E-spewing dee-vine intervention! If God is love, then you can call me Cupid!” -Sgt. Major Avery Johnson',
+    '"RUN WILD" -T-Bone 🥩',
+    '"Oh? Not everyone carries a box of Mac-n-cheese in their breifcase?" -Bizarro',
+    '“Trust me, I can stick it.” -Master Chief',
+    '"My bad sorry teammate" -probably Bizarro',
+    '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
+    '“What the hell are you doing?” -Cortana'
+  ]
 
 	const args = message.slice(1).split(' ');
   const num = rollDice();
   const bone = getBoned();
   const up = pushUp();
+  const quote = getRandomQuote(quotes)
 	// const command = args.shift().toLowerCase();
   const commands = {
     links: {
@@ -67,7 +82,7 @@ client.on('message', (channel, tags, message, self) => {
       response: () =>  `@${tags.username} you rolled a 🎲🎲 ${num} and ${num}`
     },
     halo: {
-      response: '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief'
+      response: `${quote}`
     },
     mmm: {
       response: `deliver me some Gallucci's 🍕`
@@ -124,4 +139,8 @@ function getBoned () {
 function pushUp () {
   const sides = 50;
   return Math.floor(Math.random() * sides) + 1;
+}
+
+function getRandomQuote(array) {
+  return array[Math.floor(Math.random() * array.length)];
 }
