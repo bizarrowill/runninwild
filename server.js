@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
+const reputationRegex = /(\+\+|--)/g;
 
 // placeholder: 🎃🎄🎅🏻 🎸 🇺🇸🌎🏈⚾️💦⏱💀💯✅☠️👍🏻
 
@@ -20,32 +21,11 @@ const client = new tmi.Client({
 
 client.connect();
 
-// client.on('message', async (channel, context, message) => {
-//   const isNotBot = context.username.toLowerCase() !== process.env.TWITCH_BOT_USERNAME.toLowerCase();
-
-//   if ( !isNotBot ) return;
-
-//   const [raw, command, argument] = message.match(regexpCommand);
-
-//   const { response } = commands[command] || {};
-
-//   let responseMessage = response;
-
-//   if ( typeof responseMessage === 'function' ) {
-//     responseMessage = response(argument);
-//   }
-
-//   if ( responseMessage ) {
-//     console.log(`Responding to command !${command}`);
-//     client.say(channel, responseMessage);
-//   }
-
-// });
 
 client.on('message', (channel, tags, message, self) => {
 	if(self || !message.startsWith('!')) return;
   let quotes = [
-    '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief"',
+    '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief',
     '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
     '“And you told me you were gonna wear something nice.” -Sgt. Major Avery Johnson',
     '“Asking’s Not My Strong Suit.” -Master Chief',
@@ -56,7 +36,8 @@ client.on('message', (channel, tags, message, self) => {
     '“Trust me, I can stick it.” -Master Chief',
     '"My bad sorry teammate" -probably Bizarro',
     '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
-    '“What the hell are you doing?” -Cortana'
+    '“What the hell are you doing?” -Cortana',
+    '"I am issuing General Order 13" -Captain George Kirk, Sr'
   ]
 
 	const args = message.slice(1).split(' ');
@@ -104,6 +85,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     pushup: {
       response: `💪🏻 @${tags.username} requests ${up} push-ups 💪🏻`
+    },
+    ribeye: {
+      response: `Hi, I'm Ribeye 🥩. Here's a few things I can do: !pushup - request @t_bone1701 to do random amount of pushups 💪🏻, !boned - just try it out next time you see someone get boned, !halo - a random quote, !dice - roll 🎲🎲...why not?, !RW - let the world know what time it is! 🥩`
     }
   }
   
@@ -144,3 +128,25 @@ function pushUp () {
 function getRandomQuote(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
+// client.on('message', async (channel, context, message) => {
+//   const isNotBot = context.username.toLowerCase() !== process.env.TWITCH_BOT_USERNAME.toLowerCase();
+
+//   if ( !isNotBot ) return;
+
+//   const [raw, command, argument] = message.match(regexpCommand);
+
+//   const { response } = commands[command] || {};
+
+//   let responseMessage = response;
+
+//   if ( typeof responseMessage === 'function' ) {
+//     responseMessage = response(argument);
+//   }
+
+//   if ( responseMessage ) {
+//     console.log(`Responding to command !${command}`);
+//     client.say(channel, responseMessage);
+//   }
+
+// });
