@@ -37,11 +37,13 @@ client.on('message', (channel, tags, message, self) => {
     '"My bad sorry teammate" -probably Bizarro',
     '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
     '“What the hell are you doing?” -Cortana',
-    '"I am issuing General Order 13" -Captain George Kirk, Sr'
+    '"I am issuing General Order 13" -Captain George Kirk, Sr',
+    '"Shut up Siri! I wasn\'t talking to you" -Bizarro' 
   ]
 
 	const args = message.slice(1).split(' ');
   const num = rollDice();
+  const num2 = rollDice();
   const bone = getBoned();
   const up = pushUp();
   const quote = getRandomQuote(quotes)
@@ -60,7 +62,7 @@ client.on('message', (channel, tags, message, self) => {
       response: (channel) => `${channel} @${tags.username}, you said: "${args.join(' ')}"`
     }, 
     dice: {
-      response: () =>  `@${tags.username} rolled a 🎲🎲 ${num} & ${num}`
+      response: () =>  `@${tags.username} rolled a 🎲🎲 ${num} & ${num2}`
     },
     halo: {
       response: `${quote}`
@@ -88,7 +90,7 @@ client.on('message', (channel, tags, message, self) => {
     },
     ribeye: {
       response: `Hi, I'm Ribeye 🥩. Here's a few things I can do: !pushup - request @t_bone1701 to do random amount of pushups 💪🏻, !boned - just try it out next time you see someone get boned, !halo - a random quote, !dice - roll 🎲🎲...why not?, !RW - let the world know what time it is! 🥩`
-    }
+    },
   }
   
 
