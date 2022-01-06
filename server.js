@@ -50,7 +50,7 @@ client.on('message', (channel, tags, message, self) => {
 	// const command = args.shift().toLowerCase();
   const commands = {
     links: {
-      response: 'Join the Discord right here https://discord.gg/CuBB9Ahg 🌎 also follow me on Twitter https://twitter.com/UlrichTyson & Instagram https://www.instagram.com/t_bone1701/ 👍🏻'
+      response: 'Join the Discord right here https://discord.gg/CuBB9Ahg 🌎 also follow me on Twitter https://twitter.com/t_bone1701 & Instagram https://www.instagram.com/t_bone1701/ 👍🏻'
     },
     RW: {
       response: (argument) => `🥩  @${tags.username} says its time to RUN WILD! 🥩 `
