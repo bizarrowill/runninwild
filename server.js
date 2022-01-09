@@ -91,6 +91,9 @@ client.on('message', (channel, tags, message, self) => {
     ribeye: {
       response: `Hi, I'm Ribeye 🥩. Here's a few things I can do: !pushup - request @t_bone1701 to do random amount of pushups 💪🏻, !boned - just try it out next time you see someone get boned, !halo - a random quote, !dice - roll 🎲🎲...why not?, !RW - let the world know what time it is! 🥩`
     },
+    s2: {
+      response: `🥩 Season 2 of Halo Infinite with campaign co-op comes out May 3! 🥩 `
+    }
   }
   
 
