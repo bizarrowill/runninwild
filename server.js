@@ -105,6 +105,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     unlurk: {
       response: `🥩 @${tags.username} has returned with with a feast for all of Runnin Wild 🥩`
+    },
+    so: {
+      response: `🥩 @${tags.username} says ${args[1]} is awesome and you should give them a follow at https://twitch.com/${args[1]} 🥩`
     }
   }
   
