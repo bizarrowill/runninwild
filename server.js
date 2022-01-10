@@ -40,13 +40,19 @@ client.on('message', (channel, tags, message, self) => {
     '"I am issuing General Order 13" -Captain George Kirk, Sr',
     '"Shut up Siri! I wasn\'t talking to you" -Bizarro' 
   ]
+  let meats = [
+    'is foraging the meats 🍗🥩🍖 for the feast 🍽',
+    'is checking the steaks 🥩 on the grill',
+    'is off searching for the finest 🥩 & 🧀 in all the 🌎',
+  ]
 
 	const args = message.slice(1).split(' ');
   const num = rollDice();
   const num2 = rollDice();
   const bone = getBoned();
   const up = pushUp();
-  const quote = getRandomQuote(quotes)
+  const quote = getRandomQuote(quotes);
+  const meat = getRandomQuote(meats);
 	// const command = args.shift().toLowerCase();
   const commands = {
     links: {
@@ -93,6 +99,12 @@ client.on('message', (channel, tags, message, self) => {
     },
     s2: {
       response: `🥩 Season 2 of Halo Infinite with campaign co-op comes out May 3! 🥩 `
+    },
+    lurk: {
+      response: `🥩 @${tags.username} ${meat}`
+    },
+    unlurk: {
+      response: `🥩 @${tags.username} has returned with with a feast for all of Runnin Wild 🥩`
     }
   }
   
