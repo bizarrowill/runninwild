@@ -108,6 +108,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     so: {
       response: `🥩 @${tags.username} says ${args[1]} is awesome and you should give them a follow at https://twitch.com/${args[1]} 🥩`
+    },
+    giveaway: {
+      response: `🥩 We'll be doing a giveaway to celebrate hitting affiliate soon! Follow @T_Bone1701 to be eligible and tell a friend! #50 #runninwild 🥩`
     }
   }
   
