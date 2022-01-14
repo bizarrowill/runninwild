@@ -24,21 +24,26 @@ client.connect();
 
 client.on('message', (channel, tags, message, self) => {
 	if(self || !message.startsWith('!')) return;
-  let quotes = [
+  let haloquotes = [
     '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief',
     '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
     '“And you told me you were gonna wear something nice.” -Sgt. Major Avery Johnson',
     '“Asking’s Not My Strong Suit.” -Master Chief',
     '“Thought I’d Try Shooting My Way Out—Mix Things Up A Little.” -Master Chief',
     '“Usually the good Lord works in mysterious ways. But not today! This here is sixty-six tons of straight-up, H-E-spewing dee-vine intervention! If God is love, then you can call me Cupid!” -Sgt. Major Avery Johnson',
-    '"RUN WILD" -T-Bone 🥩',
-    '"Oh? Not everyone carries a box of Mac-n-cheese in their breifcase?" -Bizarro',
     '“Trust me, I can stick it.” -Master Chief',
     '"My bad sorry teammate" -probably Bizarro',
     '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
     '“What the hell are you doing?” -Cortana',
+  ]
+  let quotes = [
+    '"RUN WILD" @T_Bone1701 🥩',
+    '"Oh? Not everyone carries a box of Mac-n-cheese in their breifcase?" -Bizarro',
+    '"My bad sorry teammate" -probably Bizarro',
+    '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
     '"I am issuing General Order 13" -Captain George Kirk, Sr',
-    '"Shut up Siri! I wasn\'t talking to you" -Bizarro' 
+    '"Shut up Siri! I wasn\'t talking to you" -Bizarro', 
+    '"I have asked Alexa to turn off my bedroom lights for for minutes now...Guess it would help if I was in my bedroom... Ok bye. LOL" @Doc_Chaos', 
   ]
   let meats = [
     'is foraging the meats 🍗🥩🍖 for the feast 🍽',
@@ -52,6 +57,7 @@ client.on('message', (channel, tags, message, self) => {
   const bone = getBoned();
   const up = pushUp();
   const quote = getRandomQuote(quotes);
+  const haloquote = getRandomQuote(haloquotes);
   const meat = getRandomQuote(meats);
 	// const command = args.shift().toLowerCase();
   const commands = {
@@ -70,8 +76,11 @@ client.on('message', (channel, tags, message, self) => {
     dice: {
       response: () =>  `@${tags.username} rolled a 🎲🎲 ${num} & ${num2}`
     },
-    halo: {
+    quote: {
       response: `${quote}`
+    },
+    halo: {
+      response: `${haloquote}`
     },
     mmm: {
       response: `🍕 @${tags.username} says deliver me some Gallucci's 🍕`
