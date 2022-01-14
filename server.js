@@ -43,7 +43,7 @@ client.on('message', (channel, tags, message, self) => {
     '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
     '"I am issuing General Order 13" -Captain George Kirk, Sr',
     '"Shut up Siri! I wasn\'t talking to you" -Bizarro', 
-    '"I have asked Alexa to turn off my bedroom lights for for minutes now...Guess it would help if I was in my bedroom... Ok bye. LOL" @Doc_Chaos', 
+    '"I have asked Alexa to turn off my bedroom lights for four minutes now...Guess it would help if I was in my bedroom... Ok bye. LOL" @Doc_Chaos', 
   ]
   let meats = [
     'is foraging the meats 🍗🥩🍖 for the feast 🍽',
