@@ -54,6 +54,13 @@ client.on('message', (channel, tags, message, self) => {
     'is off searching for the finest 🥩 & 🧀 in all the 🌎',
   ]
 
+  let ggs = [
+    '🍗🥩🍖 GG 🍗🥩🍖',
+    '🍗🥩🍖 gg 🍗🥩🍖',
+    '🥩 gg 🥩',
+    '🥩 GG 🥩',
+  ]
+
 	const args = message.slice(1).split(' ');
   const num = rollDice();
   const num2 = rollDice();
@@ -62,6 +69,7 @@ client.on('message', (channel, tags, message, self) => {
   const quote = getRandomQuote(quotes);
   const haloquote = getRandomQuote(haloquotes);
   const meat = getRandomQuote(meats);
+  const gg = getRandomQuote(ggs);
 	// const command = args.shift().toLowerCase();
   const commands = {
     links: {
@@ -84,6 +92,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     halo: {
       response: `${haloquote}`
+    },
+    gg: {
+      response: `${gg}`
     },
     mmm: {
       response: `🍕 @${tags.username} says deliver me some Gallucci's 🍕`
