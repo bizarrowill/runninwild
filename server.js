@@ -59,6 +59,11 @@ client.on('message', (channel, tags, message, self) => {
 
   let rips = [
     '💀',
+    '☠️',
+    '👻',
+    '🪦',
+    '🏴‍☠️',
+    '😵',
   ]
 
   let ggs = [
