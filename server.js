@@ -28,13 +28,16 @@ client.on('message', (channel, tags, message, self) => {
     '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief',
     '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
     '“And you told me you were gonna wear something nice.” -Sgt. Major Avery Johnson',
+    '“Stand back, Marines. Let the Chief show you how it’s done!” -Sgt. Major Avery Johnson',
     '“Asking’s Not My Strong Suit.” -Master Chief',
     '“Thought I’d Try Shooting My Way Out—Mix Things Up A Little.” -Master Chief',
     '“Usually the good Lord works in mysterious ways. But not today! This here is sixty-six tons of straight-up, H-E-spewing dee-vine intervention! If God is love, then you can call me Cupid!” -Sgt. Major Avery Johnson',
     '“Trust me, I can stick it.” -Master Chief',
     '"My bad sorry teammate" -probably Bizarro',
-    '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
+    'Negative. I have the gun. Good luck, sir.” Spartan',
     '“What the hell are you doing?” -Cortana',
+    '“Hmm… I’m detecting a high degree of cerebral cortex activity. You’re not the muscle-bound automatons the press makes you out to be.” Cortana',
+    '“You have a better idea?” Master Chief',
   ]
   let quotes = [
     '"RUN WILD" @T_Bone1701 🥩',
