@@ -67,10 +67,10 @@ client.on('message', (channel, tags, message, self) => {
   ]
 
   let ggs = [
-    '🍗🥩🍖 GG 🍗🥩🍖',
-    '🍗🥩🍖 gg 🍗🥩🍖',
-    '🥩 gg 🥩',
-    '🥩 GG 🥩',
+    '🍗🥩🍖 GGs 🍗🥩🍖',
+    '🍗🥩🍖 ggs 🍗🥩🍖',
+    '🥩 ggs 🥩',
+    '🥩 GGs 🥩',
   ]
 
 	const args = message.slice(1).split(' ');
