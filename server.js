@@ -36,7 +36,7 @@ client.on('message', (channel, tags, message, self) => {
     '“Trust me, I can stick it.” -Master Chief',
     '“Wake Me…When You Need Me.” -Master Chief',
     '"My bad sorry teammate" -probably Bizarro',
-    'Negative. I have the gun. Good luck, sir.” Spartan',
+    '"Negative. I have the gun. Good luck, sir.” -Noble 6',
     '“What the hell are you doing?” -Cortana',
     '“Hmm… I’m detecting a high degree of cerebral cortex activity. You’re not the muscle-bound automatons the press makes you out to be.” Cortana',
     '“You have a better idea?” Master Chief',
