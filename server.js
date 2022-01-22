@@ -40,7 +40,7 @@ client.on('message', (channel, tags, message, self) => {
         reputation[user]--;
       }
   
-      client.say(channel, `@${tags.username}, ${user} now has ${reputation[user]} riblets`);
+      client.say(channel, `🥩 ${user} now has ${reputation[user]} riblets 🥩`);
       return;
     }
   
