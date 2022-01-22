@@ -1,11 +1,12 @@
 require('dotenv').config();
 
 const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
-const reputationRegex = /(\+\+|--)/g;
+// const reputationRegex = /(\+\+|--)/g;
 
 // placeholder: 🎃🎄🎅🏻 🎸 🇺🇸🌎🏈⚾️💦⏱💀💯✅☠️👍🏻
 
 const tmi = require('tmi.js');
+const reputation ={};
 
 const client = new tmi.Client({
   connection: {
@@ -23,7 +24,28 @@ client.connect();
 
 
 client.on('message', (channel, tags, message, self) => {
-	if(self || !message.startsWith('!')) return;
+	  //reputation system
+    const reputationRegex = /(\+\+|--)/g;
+
+    if(reputationRegex.test(message)) {
+      const [user, operator] = message.split(reputationRegex);
+  
+      if(!(user in reputation)) {
+        reputation[user] = 0;
+      }
+  
+      if(operator === '++') {
+        reputation[user]++;
+      } else {
+        reputation[user]--;
+      }
+  
+      client.say(channel, `@${tags.username}, ${user} now has ${reputation[user]} riblets`);
+      return;
+    }
+  
+  if(self || !message.startsWith('!')) return;
+
   let haloquotes = [
     '“Relax! I’d Rather Not Piss This Thing Off!” -Master Chief',
     '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
