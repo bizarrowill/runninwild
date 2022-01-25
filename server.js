@@ -68,12 +68,21 @@ client.on('message', (channel, tags, message, self) => {
   ]
   let quotes = [
     '"RUN WILD" @T_Bone1701 🥩',
+    '“Logic is the beginning of wisdom, not the end.” —Spock 🖖🏻',
+    '“Live long, and prosper 🖖🏻” —Spock',
+    '“But one man can change the present!” —Captain Kirk',
+    '“Things are only impossible until they’re not.” —Captain Kirk',
     '"Oh? Not everyone carries a box of Mac-n-cheese in their breifcase?" -Bizarro',
     '"My bad sorry teammate" -probably Bizarro',
     '"Hold onto your butts" -Samuel L Jackson https://www.youtube.com/watch?v=JjuROyn6d28',
     '"I am issuing General Order 13" -Captain George Kirk, Sr',
     '"Shut up Siri! I wasn\'t talking to you" -Bizarro', 
+    '"The greatest discovery of all time is that a person can change his future by merely changing his attitude." -Oprah Winfrey', 
     '"Yippie-Ki-Yay, Mother%$#@#$" -John McClane', 
+    '“It is possible to commit no mistakes and still lose. That is not weakness, that is life.” ―Jean-Luc Picard', 
+    '“A man either lives life as it happens to him, meets it head-on and licks it, or he turns his back on it and starts to wither away.” ―Gene Roddenberry', 
+    '"The greatest way to live with honor in this world is to be what we pretend to be." -Socrates', 
+    '"Never was anything great achieved without danger." -Machiavelli', 
     '"I have asked Alexa to turn off my bedroom lights for four minutes now...Guess it would help if I was in my bedroom... Ok bye. LOL" @Doc_Chaos', 
   ]
   let meats = [
