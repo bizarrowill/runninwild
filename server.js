@@ -51,6 +51,7 @@ client.on('message', (channel, tags, message, self) => {
     '“Men, keep your eyes downrange, fingers on the triggers, and we all come home in one piece. Am I right, Marines?” -Sgt. Major Avery Johnson',
     '“And you told me you were gonna wear something nice.” -Sgt. Major Avery Johnson',
     '“For a brick… he flew pretty good.” -Sgt. Major Avery Johnson',
+    '“The Chief is gonna jump in this tank, roll across the bridge, and blow up any inhuman-son-of-***** dumb enough to get between him and the Prophet of Regret! Pull yourself together, because you’re going with him!” -Sgt. Major Avery Johnson',
     '“Stand back, Marines. Let the Chief show you how it’s done!” -Sgt. Major Avery Johnson',
     '“Asking’s Not My Strong Suit.” -Master Chief',
     '“Thought I’d Try Shooting My Way Out—Mix Things Up A Little.” -Master Chief',
@@ -60,6 +61,8 @@ client.on('message', (channel, tags, message, self) => {
     '"My bad sorry teammate" -probably Bizarro',
     '"Negative. I have the gun. Good luck, sir.” -Noble 6',
     '“What the hell are you doing?” -Cortana',
+    '“Now would be a very good time to leave!” -Cortana',
+    '“Security to the bridge, the Master Chief has gone rampant! Take him down, boys.”  -Cortana',
     '“Hmm… I’m detecting a high degree of cerebral cortex activity. You’re not the muscle-bound automatons the press makes you out to be.” Cortana',
     '“You have a better idea?” Master Chief',
   ]
@@ -169,6 +172,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     so: {
       response: `🥩 @${tags.username} says ${args[1]} is awesome and you should give them a follow at https://twitch.com/${args[1]} 🥩`
+    },
+    rank: {
+      response: `🥩 ${tags.username} has ${reputation[user]} riblets 🥩`
     },
     giveaway: {
       response: `🥩 We'll be doing a giveaway to celebrate hitting affiliate soon! Follow @T_Bone1701 to be eligible and tell a friend! #50 #runninwild 🥩`
