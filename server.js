@@ -57,17 +57,31 @@ client.on('message', (channel, tags, message, self) => {
     '“Thought I’d Try Shooting My Way Out—Mix Things Up A Little.” -Master Chief',
     '“Usually the good Lord works in mysterious ways. But not today! This here is sixty-six tons of straight-up, H-E-spewing dee-vine intervention! If God is love, then you can call me Cupid!” -Sgt. Major Avery Johnson',
     '“Trust me, I can stick it.” -Master Chief',
+    '"Sir, finishing this fight." -Master Chief',
+    '"I figure if God can hear how scared I am, so can everyone else. Locke, you buying the first drink when we\'re done?" -Spartan Edward Buck, Halo 5',
+    '"You\'ve completed your mission, Spartan Locke. Mine is just beginning." -Master Chief',
     '“Wake Me…When You Need Me.” -Master Chief',
+    '"Our duty, as soldiers, is to protect humanity... whatever the cost." -Master Chief',
+    '"To give the covenant back their bomb." -Master Chief',
     '"My bad sorry teammate" -probably Bizarro',
+    '"No, sir. I\'ll be the decoy." -Lasky',
+    '"What the hell are those things?" -Lasky',
+    '"Axios!" -Lasky',
+    '"I don\'t know if it\'s too soon to ask you for a favor, but...we\'re going to run out of breathing room here real quick. I don\'t suppose you\'re any good at clearing LZs?" -Lasky',
     '"Negative. I have the gun. Good luck, sir.” -Noble 6',
     '“What the hell are you doing?” -Cortana',
+    '"Thanks, Chief. It was getting a bit dicey there for a minute." -Lasky',
+    '"There are those who said this day would never come. What have they to say now?" -Prophet of Truth, Halo 2',
     '“Now would be a very good time to leave!” -Cortana',
     '“Security to the bridge, the Master Chief has gone rampant! Take him down, boys.”  -Cortana',
-    '“Hmm… I’m detecting a high degree of cerebral cortex activity. You’re not the muscle-bound automatons the press makes you out to be.” Cortana',
-    '“You have a better idea?” Master Chief',
+    '“Hmm… I’m detecting a high degree of cerebral cortex activity. You’re not the muscle-bound automatons the press makes you out to be.” =Cortana',
+    '“You have a better idea?” =Master Chief',
+    '"Roger that, Chief. You might want to back up a little. Main battery, fire!" -Lasky',
   ]
   let quotes = [
     '"RUN WILD" @T_Bone1701 🥩',
+    '“May the Force be with you.” -Star Wars, 1977',
+    '“There\'s no place like home.” -Dorothy, The Wizard of Oz, 1939',
     '“Logic is the beginning of wisdom, not the end.” —Spock 🖖🏻',
     '“Live long, and prosper 🖖🏻” —Spock',
     '“But one man can change the present!” —Captain Kirk',
@@ -79,6 +93,11 @@ client.on('message', (channel, tags, message, self) => {
     '"Shut up Siri! I wasn\'t talking to you" -Bizarro', 
     '"The greatest discovery of all time is that a person can change his future by merely changing his attitude." -Oprah Winfrey', 
     '"Yippie-Ki-Yay, Mother%$#@#$" -John McClane', 
+    '“What we\'ve got here is failure to communicate.” -Cool Hand Luke, 1967', 
+    '“I\'ll be back.” -The Terminator, 1984', 
+    '“Keep your friends close, but your enemies closer.” -The Godfather Part II, 1974', 
+    '“That\'ll do, pig. That\'ll do.” -Farmer Hoggett, Babe, 1995', 
+    '“You\'re gonna need a bigger boat.” -Chief Brady, Jaws, 1975', 
     '“It is possible to commit no mistakes and still lose. That is not weakness, that is life.” ―Jean-Luc Picard', 
     '“A man either lives life as it happens to him, meets it head-on and licks it, or he turns his back on it and starts to wither away.” ―Gene Roddenberry', 
     '"The greatest way to live with honor in this world is to be what we pretend to be." -Socrates', 
@@ -176,6 +195,9 @@ client.on('message', (channel, tags, message, self) => {
     lurk: {
       response: `🥩 @${tags.username} ${meat}`
     },
+    chair: {
+      response: `🥩 Wait for it... 😂👀🪑 https://www.youtube.com/watch?v=be60bsRDJDA&ab_channel=TBONE1701 😂🥩`
+    },
     unlurk: {
       response: `🥩 @${tags.username} has returned with with a feast for all of Runnin Wild 🥩`
     },
@@ -186,6 +208,9 @@ client.on('message', (channel, tags, message, self) => {
     //   response: `🥩 ${tags.username} has ${reputation[user]} riblets 🥩`
     // },
     giveaway: {
+      response: `🥩 We'll be doing a giveaway to celebrate hitting affiliate soon! Follow @T_Bone1701 to be eligible and tell a friend! #50 #runninwild 🥩`
+    },
+    give: {
       response: `🥩 We'll be doing a giveaway to celebrate hitting affiliate soon! Follow @T_Bone1701 to be eligible and tell a friend! #50 #runninwild 🥩`
     }
   }
