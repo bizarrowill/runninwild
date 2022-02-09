@@ -96,7 +96,8 @@ client.on('message', (channel, tags, message, self) => {
     '“What we\'ve got here is failure to communicate.” -Cool Hand Luke, 1967', 
     '“I\'ll be back.” -The Terminator, 1984', 
     '“Keep your friends close, but your enemies closer.” -The Godfather Part II, 1974', 
-    '“That\'ll do, pig. That\'ll do.” -Farmer Hoggett, Babe, 1995', 
+    '“That\'ll do, pig. That\'ll do.” -Farmer Hoggett, Babe 🐷, 1995', 
+    '“That\'ll do, donkey. That\'ll donkey.” -Shrek, 2001', 
     '“You\'re gonna need a bigger boat.” -Chief Brady, Jaws, 1975', 
     '“It is possible to commit no mistakes and still lose. That is not weakness, that is life.” ―Jean-Luc Picard', 
     '“A man either lives life as it happens to him, meets it head-on and licks it, or he turns his back on it and starts to wither away.” ―Gene Roddenberry', 
@@ -212,6 +213,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     give: {
       response: `🥩 We'll be doing a giveaway to celebrate hitting affiliate soon! Follow @T_Bone1701 to be eligible and tell a friend! #50 #runninwild 🥩`
+    },
+    rules: {
+      response: `🥩 Rules for the chat: Be kind ☺️. No politics, ists or isms 🥩 🚨 Disclaimer: Things may get a bit WILD🚨`
     }
   }
   
@@ -252,6 +256,18 @@ function pushUp () {
 function getRandomQuote(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
+// async function fetchJoke() {
+//   const jokeData = await fetch('https://icanhazdadjoke.com/', {
+// 		headers: {
+// 			Accept: 'application/json',
+// 		},
+// 	});
+// 	const jokeObj = await jokeData.json();
+  
+// 	console.log(jokeObj.joke);
+//   return jokeObj.joke;
+// }
 
 // client.on('message', async (channel, context, message) => {
 //   const isNotBot = context.username.toLowerCase() !== process.env.TWITCH_BOT_USERNAME.toLowerCase();

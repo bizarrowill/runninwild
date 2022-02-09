@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bizarrowill/runninwild#readme",
   "dependencies": {
+    "chucknorris-io": "^1.0.5",
     "dotenv": "^8.2.0",
     "tmi.js": "^1.8.3"
   }
