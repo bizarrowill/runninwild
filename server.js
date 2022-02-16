@@ -8,6 +8,9 @@ const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
 const tmi = require('tmi.js');
 const reputation ={};
 
+const Chuck  = require('chucknorris-io'),
+      newChuck = new Chuck();
+
 const client = new tmi.Client({
   connection: {
     reconnect: true
@@ -137,6 +140,15 @@ client.on('message', (channel, tags, message, self) => {
   const meat = getRandomQuote(meats);
   const gg = getRandomQuote(ggs);
   const rip = getRandomQuote(rips);
+  // const chuck = newChuck.getRandomJoke().then(function (response) {
+  //   // do stuff here
+  //       console.log(response.value);
+  //       response = response.json();
+  //       return response;
+  // }).then(function (data) {
+  //       // message.channel.send(response);
+  //       console.log(data.value);
+  //   });
 	// const command = args.shift().toLowerCase();
   const commands = {
     links: {
@@ -216,6 +228,12 @@ client.on('message', (channel, tags, message, self) => {
     },
     rules: {
       response: `🥩 Rules for the chat: Be kind ☺️. No politics, ists or isms 🥩 🚨 Disclaimer: Things may get a bit WILD🚨`
+    },
+    // chuck: {
+    //   response: `${chuck}`
+    // }
+    riblets: {
+      response: `🥩 Want to make T-Bone eat a bean? Redeem your Riblets for random shenanigans 🥩`
     }
   }
   
@@ -256,6 +274,10 @@ function pushUp () {
 function getRandomQuote(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
+
+
+
 
 // async function fetchJoke() {
 //   const jokeData = await fetch('https://icanhazdadjoke.com/', {
