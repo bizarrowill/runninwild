@@ -200,7 +200,7 @@ client.on('message', (channel, tags, message, self) => {
       response: `💪🏻 @${tags.username} requests ${up} push-ups 💪🏻`
     },
     ribeye: {
-      response: `Hi ${tags.username}, I'm Ribeye 🥩. Here's a few things I can do: !pushup - request @t_bone1701 to do random amount of pushups 💪🏻, !boned - just try it, !halo !quote - random quotes, !dice - roll 🎲🎲...why not?, !RW - let the world know what time it is! !lurk !unlurk - you know, !riblets - earn that meat...redeem those rewards 🥩`
+      response: `Hi ${tags.username}, I'm Ribeye 🥩. Here's a few things I can do: !boned - just try it, !halo !quote - random quotes, !dice - roll 🎲🎲...why not?, !RW - let the world know what time it is! !lurk !unlurk - you know, !riblets - earn that meat...redeem those rewards Other: !gg !rip !rules !links 🥩`
     },
     s2: {
       response: `🥩 Season 2 of Halo Infinite with campaign co-op comes out May 3! 🥩 `
