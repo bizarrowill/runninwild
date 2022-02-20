@@ -244,14 +244,14 @@ client.on('message', (channel, tags, message, self) => {
       response: `${rip}`
     },
     bits: {
-      response: `🥩 thats right @${tags.username}, its 💎BITS HYPE💎 time. 🙏🏻 Thank you ${args[1]} don't forget to RUN WILD! 🥩`
+      response: `🥩 thats right @${tags.username}, its 💎BITS HYPE💎 time! 🙏🏻 Thanks ${args[1]} for supporting the channel. Don't forget to RUN WILD! 💎BITS HYPE💎 💎BITS HYPE💎 💎BITS HYPE💎  🥩 `
     },
     sub: {
-      response: `🥩 oh yeah @${tags.username}, its 🎉SUB HYPE🎉 time! 🙏🏻 Thank you ${args[1]} lets RUN WILD! 🥩`
+      response: `🥩 oh yeah @${tags.username}, its 🎉SUB HYPE🎉 time! 🙏🏻 Thank you ${args[1]} for supporting the channel, it means a lot. As always, lets RUN WILD! 🎉SUB HYPE🎉🎉SUB HYPE🎉🎉SUB HYPE🎉 🥩`
     },
-    contest: {
-      response: `The inaugural winner of T Bone1701's affiliate challenge is... ${contest}. Thanks for the support everyone! Keep an eye on the channel for the next community challenge 💪🏻 and more giveaways!`
-    },
+    // contest: {
+    //   response: `The inaugural winner of T Bone1701's affiliate challenge is... ${contest}. Thanks for the support everyone! Keep an eye on the channel for the next community challenge 💪🏻 and more giveaways!`
+    // },
     mmm: {
       response: `🍕 @${tags.username} says deliver me some Gallucci's 🍕`
     }, 
