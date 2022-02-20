@@ -129,6 +129,70 @@ client.on('message', (channel, tags, message, self) => {
     '🥩 ggs 🥩',
     '🥩 GGs 🥩',
   ]
+  
+  let contestants = [
+    '🥩 geckobol348 🥩',
+    '🥩 codqamer91 🥩',
+    '🥩 aceukixz 🥩',
+    '🥩 hunmim 🥩',
+    '🥩 m47erlck 🥩',
+    '🥩 stevential 🥩',
+    '🥩 tecorish 🥩',
+    '🥩 BrogoShot 🥩',
+    '🥩 avveehungry 🥩',
+    '🥩 GenCosmic 🥩',
+    '🥩 wiseguyk 🥩',
+    '🥩 Misterachiever1 🥩',
+    '🥩 buddy_devil 🥩',
+    '🥩 nanaseharuka34 🥩',
+    '🥩 edouble6104 🥩',
+    '🥩 ydotome12 🥩',
+    '🥩 BenitoPotato 🥩',
+    '🥩 mrlivetank 🥩',
+    '🥩 freckledbanana 🥩',
+    '🥩 Schmedtor 🥩',
+    '🥩 kodiazer0 🥩',
+    '🥩 dragonflower1723 🥩',
+    '🥩 darknesslivez12 🥩',
+    '🥩 secretsofthebook 🥩',
+    '🥩 ShadowFangNinja 🥩',
+    '🥩 n7_mint_bunny 🥩',
+    '🥩 RaDxThUnDeR 🥩',
+    '🥩 basil_ow 🥩',
+    '🥩 j7f8 🥩',
+    '🥩 steak_stonks 🥩',
+    '🥩 dreggman9801 🥩',
+    '🥩 Adamdom18 🥩',
+    '🥩 unresolve 🥩',
+    '🥩 callmeconnorworldview 🥩',
+    '🥩 caveirahell666 🥩',
+    '🥩 TheHauntedCheeseburger 🥩',
+    '🥩 imAKTU 🥩',
+    '🥩 blue77butterfly 🥩',
+    '🥩 MinnyPoolParty 🥩',
+    '🥩 wce191 🥩',
+    '🥩 queenbee85 🥩',
+    '🥩 pimpiemcfarlan 🥩',
+    '🥩 BlueTheRaptorPony 🥩',
+    '🥩 bb61cgn39 🥩',
+    '🥩 MisschievousFey 🥩',
+    '🥩 bhoycon 🥩',
+    '🥩 thenewp10s 🥩',
+    '🥩 landen_aa 🥩',
+    '🥩 RealKazooie 🥩',
+    '🥩 kingbullet 🥩',
+    '🥩 SGR_Renegade 🥩',
+    '🥩 MajorPapaChubbs 🥩',
+    '🥩 Doc_Chaos 🥩',
+    '🥩 PykeMann 🥩',
+    '🥩 StacefaceMayhem 🥩',
+    '🥩 Fe4R_Fir3 🥩',
+    '🥩 saltyjarvis 🥩',
+    '🥩 speedysnipe 🥩',
+    '🥩 kenzd0g 🥩',
+    '🥩 Purgeyy 🥩',
+  ]
+  
 
 	const args = message.slice(1).split(' ');
   const num = rollDice();
@@ -140,6 +204,7 @@ client.on('message', (channel, tags, message, self) => {
   const meat = getRandomQuote(meats);
   const gg = getRandomQuote(ggs);
   const rip = getRandomQuote(rips);
+  const contest = getRandomQuote(contestants);
   // const chuck = newChuck.getRandomJoke().then(function (response) {
   //   // do stuff here
   //       console.log(response.value);
@@ -177,6 +242,15 @@ client.on('message', (channel, tags, message, self) => {
     },
     rip: {
       response: `${rip}`
+    },
+    bits: {
+      response: `🥩 thats right @${tags.username}, its 💎BITS HYPE💎 time. 🙏🏻 Thank you ${args[1]} don't forget to RUN WILD! 🥩`
+    },
+    sub: {
+      response: `🥩 oh yeah @${tags.username}, its 🎉SUB HYPE🎉 time! 🙏🏻 Thank you ${args[1]} lets RUN WILD! 🥩`
+    },
+    contest: {
+      response: `The inaugural winner of T Bone1701's affiliate challenge is... ${contest}. Thanks for the support everyone! Keep an eye on the channel for the next community challenge 💪🏻 and more giveaways!`
     },
     mmm: {
       response: `🍕 @${tags.username} says deliver me some Gallucci's 🍕`
