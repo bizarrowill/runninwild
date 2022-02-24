@@ -131,6 +131,18 @@ client.on('message', (channel, tags, message, self) => {
   ]
   
   let contestants = [
+    '🥩 @yprxze 🥩',
+    '🥩 @gustavho_21 🥩',
+    '🥩 @niyah426 🥩',
+    '🥩 @kammy__kay 🥩',
+    '🥩 @baconplis 🥩',
+    '🥩 @WoifMom 🥩',
+    '🥩 @catalinlz 🥩',
+    '🥩 @dishant21 🥩',
+    '🥩 @theezsukz 🥩',
+    '🥩 @RagingUrge 🥩',
+    '🥩 @YourBae_Suzy 🥩',
+    '🥩 @Zer0Origin 🥩',
     '🥩 @geckobol348 🥩',
     '🥩 @codqamer91 🥩',
     '🥩 @aceukixz 🥩',
@@ -308,6 +320,9 @@ client.on('message', (channel, tags, message, self) => {
     // }
     riblets: {
       response: `🥩 Want to make T-Bone eat a bean? Redeem your Riblets for random shenanigans 🥩`
+    },
+    hype: {
+      response: `🥩 hype train command coming soon... 🥩`
     }
   }
   
