@@ -267,9 +267,9 @@ client.on('message', (channel, tags, message, self) => {
     sub: {
       response: `🥩 oh yeah @${tags.username}, its 🎉SUB HYPE🎉 time! 🙏🏻 Thank you ${args[1]} for supporting the channel, it means a lot. As always, lets RUN WILD! 🎉SUB HYPE🎉🎉SUB HYPE🎉🎉SUB HYPE🎉 🥩`
     },
-    // spin: {
-    //   response: `🥩 The inaugural winner of T Bone1701's affiliate challenge is...  ${contest} (you will receive a dm soon). Thanks for the support everyone! Keep an eye on the channel for the next community challenge 💪🏻 and more giveaways! #runninwild 🥩`
-    // },
+    spin: {
+      response: `🥩 The inaugural winner of T Bone1701's affiliate challenge is...  ${contest} (you will receive a dm soon). Thanks for the support everyone! Keep an eye on the channel for the next community challenge 💪🏻 and more giveaways! #runninwild 🥩`
+    },
     mmm: {
       response: `🍕 @${tags.username} says deliver me some Gallucci's 🍕`
     }, 
@@ -329,6 +329,9 @@ client.on('message', (channel, tags, message, self) => {
     },
     hype: {
       response: `🥩 hype train command coming soon... 🥩`
+    },
+    friends: {
+      response: `🥩 Big shout out to our friends of the stream! Please check out their work: https://www.beepingnerdsdesign.com/ | https://bizarrowill.github.io/  🥩`
     }
   }
   
